@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container1 {
+            display: flex;
+            display: inline-grid;
+            grid-template: 60px 60px 60px 60px 60px 60px / 180px 180px 180px;
+            background-color: lightblue;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+
+        .room {
+            border: 1px solid;
+            font-size: 50%;
+            text-align: center;
+        }
+
+        #main-room1 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        
+        #main-room2 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        #main-room3 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+
+        #main-room4 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        #main-room5 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        #main-room6 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+
+        #side-room1 {
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        #side-room2 {
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 7;
+        }
+
+        aside {
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        h2 {
+            margin-left: 15px;
+        }
+
+        p  {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <aside>
+                <h2><img style="filter: invert(100%); width: 25px; height: 25px;" src="../images/layout.png" alt="Sidebar Image" style="width: 100%;">
+                      Dashboard
+                </h2>
+                <p> </p>
+                <p>Home</p>
+                <p>Profile</p>
+                <p>Messages</p>
+                <p>History</p>
+                <p>Tasks</p>
+                <p>Communities</p>
+                <p> </p>
+                <p>Setting</p>
+                <p>Support</p>
+                <p>Privacy</p>
+            </aside>
+
+            <div class="container" style="flex-direction: column;">
+                <div class="container">
+                    <main>
+                        <h2>Welcome to Your Website!</h2>
+                        <p>This is a simple boilerplate for your website. Customize it according to your needs.</p>
+                    </main>
+                </div>
+                <div class="container1" style="min-height: 100vh; background-color: #606060;">
+                    <p class="room" id="main-room1">A</p>
+                    <p class="room" id="main-room2">B</p>
+                    <p class="room" id="main-room3">C</p>
+                    <p class="room" id="main-room4">D</pv>
+                    <p class="room" id="main-room5">E</p>
+                    <p class="room" id="main-room6">F</p>
+                    <p class="room" id="side-room1">G</p>
+                    <p class="room" id="side-room2">H</p>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
